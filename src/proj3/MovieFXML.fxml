@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj3.MovieFXMLController">
+   <children>
+      <Button layoutX="48.0" layoutY="200.0" mnemonicParsing="false" onAction="#onClickAdd" text="Add Movie" />
+      <Button layoutX="48.0" layoutY="241.0" mnemonicParsing="false" onAction="#onClickRemove" text="Remove Movie" />
+      <Button layoutX="48.0" layoutY="282.0" mnemonicParsing="false" onAction="#onClickLoad" text="Load Movie" />
+      <Button layoutX="48.0" layoutY="323.0" mnemonicParsing="false" onAction="#onClickSave" text="Save Movie" />
+      <Label layoutX="48.0" layoutY="119.0" prefHeight="18.0" prefWidth="278.0" text="Type the following Movie you want to update:-">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="MovieInputTextField" layoutX="48.0" layoutY="141.0" prefHeight="26.0" prefWidth="242.0" />
+      <ListView fx:id="movieList" layoutX="309.0" layoutY="143.0" prefHeight="246.0" prefWidth="258.0" />
+      <Label layoutX="48.0" layoutY="55.0" prefHeight="49.0" prefWidth="522.0" text="Movies list Update Form:-">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
